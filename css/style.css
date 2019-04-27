@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+	--yellow: #F2D026;
+	--l-orange: #F29F04;
+	--d-orange: #F27304;
+	--brown: #BF8048;
+	--red: #F20404;
+	--gray-dark: #343a40;
+}
+
+/* navbar{
+	width: 80%;
+	margin: auto;
+} */
+
+
+#navlogo{
+	
+	margin-top:-20px;
+	margin-bottom: -15px;
+	margin-right: 10px;
+}
+
+/* custom colours for nav-dark theme
+
+1. Changed the 'active' colour to themed dark orange #F27304
+2. Changed the 'hover' and 'focus' colours to themed light orange #F29F04
+3. Changed primary navigation items to white
+4. Created new sub-menu for secondary navigation, used the grey previously used for primary navigation items
+
+
+*/
+
+.navbar-dark .navbar-brand {
+  color: #fff;
+}
+
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* added extra code to handle sub-menu hover and focus */
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link.sub-menu:hover, .navbar-dark .navbar-nav .nav-link.sub-menu:focus, .navbar-dark .navbar-nav .sub-menu > .nav-link:hover, .navbar-dark .navbar-nav .sub-menu > .nav-link:focus {
+  color: var(--l-orange);
+}
+
+.navbar-dark .navbar-nav .nav-link.disabled {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--d-orange);
+}
+
+/* added extra code for new sub-menu colour */
+
+.navbar-dark .navbar-nav .sub-menu > .nav-link {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-dark .navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-text {
+  color: #fff;
+}
+
+.navbar-dark .navbar-text a {
+  color: var(--l-orange);
+}
+
+.navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
+  color: var(--l-orange);
+}
+
+/* css for incomplete pages in nav */
+
+.incomplete {
+  text-decoration: line-through;
+}
+
+/* end redoing theme for navigation */
+
+/* change the button colour theme for search bar/others to be primary colour */
+.btn-outline-success {
+	color: var(--l-orange);
+	border-color: var(--l-orange);
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: var(--l-orange);
+  border-color: var(--l-orange);
+}
+
+/* end changing colour scheme   */
+
+/* home page styling */
+
+.jumbotron {
+	background-image: url('../images/banner.jpg');
+	background-color: #cccccc;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: var(--d-orange)
+}
+
+
+.content-page{
+	margin-top: 30px;
+}
+
+.card-title {
+	padding-top: 10px;
+}
+
+/* styling the cards on the wine product page */
+
+.wine-product h4.card-title, .wine-product h6.card-subtitle, .card-header {
+	padding: 5px;
+	background-color: var(--l-orange);
+	color: var(--grey-dark);
+}
+
+.wine-product h4.card-title{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	
+}
+
+.wine-product h6.card-subtitle{
+	text-align: right;
+	margin-top: 0px;
+}
+
+.wine-product p.card-text{
+	padding: 10px;
+	
+}
+
+/* end wine product styling */
+
+/* subscribe section */
+
+.subscribe{
+	width: 5%;
+}
+
+footer ul{
+	margin:auto;
+}
+
